@@ -1,8 +1,13 @@
-import { Lora } from "next/font/google";
+import { Lora, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const lora = Lora({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
+const nunito = Nunito({
+  subsets: ["latin"],
+
+  variable: "--font-nunito",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lora.className}>
+      <body className={`${lora.variable} ${nunito.variable} font-sans`}>
         <Navbar />
         {children}
       </body>

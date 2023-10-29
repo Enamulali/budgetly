@@ -13,6 +13,10 @@ module.exports = {
         neutral: "#A0AEC0", // Neutral gray or light blue for professionalism
         "neutral-light": "#e6ecf0", // Lighter shade of neutral color
       },
+      fontFamily: {
+        sans: ["var(--font-lora)"],
+        mono: ["var(--font-nunito)"],
+      },
     },
   },
   plugins: [],
