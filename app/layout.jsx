@@ -1,7 +1,8 @@
-import { Nunito } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
-const rubik = Nunito({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={lora.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
