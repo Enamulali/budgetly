@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: "#6BB67D", // Muted green for financial elements
+        "primary-light": "#C4D6B0", // Lighter shade of green
+        neutral: "#A0AEC0", // Neutral gray or light blue for professionalism
+        "neutral-light": "#e6ecf0", // Lighter shade of neutral color
       },
     },
   },
   plugins: [],
-}
+};
